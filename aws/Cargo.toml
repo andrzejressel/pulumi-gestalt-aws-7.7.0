@@ -1,0 +1,12 @@
+[package]
+name = "pulumi_aws"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+pulumi_gestalt_rust.workspace = true
+bon.workspace = true
+serde = "1.0.219"
+
+[build-dependencies]
+pulumi_gestalt_build.workspace = true

@@ -1,0 +1,17 @@
+[workspace]
+resolver = "3"
+members = [
+    "homelab",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+pulumi_aws = { path = "aws" }
+
+pulumi_gestalt_rust = "0.0.3"
+anyhow = "1.0.99"
+bon = "3.7.2"
+pulumi_gestalt_build = "0.0.3"

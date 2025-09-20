@@ -1,0 +1,18 @@
+set windows-shell := ["pwsh.exe", "-c"]
+
+run:
+    cargo run
+
+install-requirements:
+    pulumi plugin install language gestalt "0.0.3" --server github://api.github.com/andrzejressel/pulumi-gestalt
+
+[windows]
+local-test:
+    #!pwsh
+    Set-StrictMode -Version Latest
+    $ErrorActionPreference = "Stop"
+    $PSNativeCommandUseErrorActionPreference = $true
+
+    $env:PULUMI_CONFIG_PASSPHRASE=" "
+    pulumi destroy -y
+    pulumi up -y
