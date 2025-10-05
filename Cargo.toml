@@ -9,7 +9,7 @@ version = "0.1.0"
 edition = "2024"
 
 [workspace.dependencies]
-pulumi_gestalt_rust = { git = "https://github.com/andrzejressel/pulumi-gestalt.git", rev = "cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a" }
+pulumi_gestalt_rust = "0.0.4"
 anyhow = "1.0.99"
 bon = "3.7.2"
-pulumi_gestalt_build  = { git = "https://github.com/andrzejressel/pulumi-gestalt.git", rev = "cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a" }
+pulumi_gestalt_build = "0.0.4"

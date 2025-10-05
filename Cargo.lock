@@ -1050,8 +1050,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_build"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bee07ea351b8f44dd19819f1c7c31b01fd4484ea0cbe0f990e030429c8d8fa35"
 dependencies = [
  "anyhow",
  "pulumi_gestalt_generator",
@@ -1061,8 +1062,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_core"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "942c7aa18f380b2fab6ce3022200387bca640d9af9120a94e0a1a52d59a05cb5"
 dependencies = [
  "anyhow",
  "log",
@@ -1093,8 +1095,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_generator"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7e1dd09d3d2b14662acb5a93eacfa4eb4833b93c567ed5f6e225a2c790f0547b"
 dependencies = [
  "anyhow",
  "askama",
@@ -1115,8 +1118,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_grpc_connection"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "866d6208a075fee4edd710bcf9f860784d08ff91bcc84fe497829275e4236a27"
 dependencies = [
  "anyhow",
  "futures",
@@ -1129,8 +1133,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_proto"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "379f95fa014612c12b8938dc3d89406cbfb35639709f6995e31634c7f7fc186f"
 dependencies = [
  "prost",
  "prost-types",
@@ -1140,8 +1145,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_rust"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bc94af0e0449c9b042cc9e98e68752bccd42ad762974af9c2a524a81f339741c"
 dependencies = [
  "anyhow",
  "bon",
@@ -1154,16 +1160,18 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_rust_adapter"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3eceeb9a166b80fad93d1d978f150d9ca94abda9de79d38ad99223828f701ae2"
 dependencies = [
  "serde",
 ]
 
 [[package]]
 name = "pulumi_gestalt_rust_adapter_native"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d8ca8a17aba5752b20249b54a3aea0f04fd8a2918efbf52a872dee5da18e2679"
 dependencies = [
  "pulumi_gestalt_rust_adapter",
  "pulumi_gestalt_rust_integration",
@@ -1173,8 +1181,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_rust_adapter_wasm"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "76a5084f2066a58100596126ee8a39509cdb7155084d3eadf9064124201a81df"
 dependencies = [
  "anyhow",
  "log",
@@ -1187,8 +1196,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_rust_integration"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dcbbaf5d0d6fb2f79f861a14ab69b13a17a24b99b30b5bb07ae27fd3750186f7"
 dependencies = [
  "anyhow",
  "pulumi_gestalt_core",
@@ -1201,8 +1211,9 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_schema"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f89efe57a132d95490030c56f38699e3d8c81b59090d8a2b78a54dad598cb4fe"
 dependencies = [
  "anyhow",
  "convert_case",
@@ -1215,16 +1226,18 @@ dependencies = [
 
 [[package]]
 name = "pulumi_gestalt_serde_constant_string"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ecd08a93c99ccc39d3a71c344cf67899e1ae156b9fe1656287afa885d8fc72fb"
 dependencies = [
  "serde",
 ]
 
 [[package]]
 name = "pulumi_gestalt_wit"
-version = "0.0.0-DEV"
-source = "git+https://github.com/andrzejressel/pulumi-gestalt.git?rev=cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a#cf284abf5083f4b2e1c73c5c5a3924223fcf9a8a"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1fd0a11afabded649bd8c9baaf137acef73ae04f4e207c2d3f8a81043d525bf9"
 dependencies = [
  "wit-bindgen",
 ]
