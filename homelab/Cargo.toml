@@ -4,6 +4,20 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-anyhow.workspace = true
 pulumi_gestalt_rust.workspace = true
-pulumi_aws.workspace = true
+bon.workspace = true
+# Core serialization and async runtime
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.143"
+serde_yaml = "0.9.34"
+anyhow = "1.0.99"
+uuid = { version = "1.18.0", features = ["v4"] }
+
+# Utilities and logging
+tracing = "0.1.41"
+log = "0.4"
+chrono = { version = "0.4.41", features = ["serde"] }
+dotenv = "0.15"      # Load .env files into environment variables
+
+[build-dependencies]
+pulumi_gestalt_build.workspace = true

@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectVersion",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::${S3_BUCKET_NAME}",
+                "arn:aws:s3:::${S3_BUCKET_NAME}/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr-public:BatchCheckLayerAvailability",
+                "ecr-public:GetDownloadUrlForLayer",
+                "ecr-public:BatchGetImage",
+                "ecr-public:GetAuthorizationToken",
+                "ecr-public:PutImage",
+                "ecr-public:InitiateLayerUpload",
+                "ecr-public:UploadLayerPart",
+                "ecr-public:CompleteLayerUpload",
+                "sts:GetServiceBearerToken"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

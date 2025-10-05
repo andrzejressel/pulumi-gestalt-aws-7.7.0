@@ -8,6 +8,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             "ec2",
             "pipes",
             "s3",
+            "s3control",
             "sqs",
             "iam",
             "ecrpublic",
